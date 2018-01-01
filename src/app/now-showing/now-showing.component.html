@@ -1,0 +1,5 @@
+<section class="now-showing-container">
+  <a class="movie-item" *ngFor="let item of movieList" [routerLink]="['/details',item.id]">
+    <img class="movie-item-img" src="https://image.tmdb.org/t/p/w300/{{item.poster_path}}" alt="{{item.title}}" />
+  </a>
+</section>

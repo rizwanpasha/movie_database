@@ -1,0 +1,53 @@
+
+section.details-container {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-gap: 10px;
+    margin: 10px auto ;
+    color:#212121;
+  }
+
+  .image>img{
+    box-shadow:0px 0px 8px 2px rgba(0,0,0,0.6);
+}
+  .details{
+      padding:15px;
+  }
+
+
+  .details>.title{
+      font-size:30px;
+      margin-bottom:10px;
+  }
+
+  .details>.release_date{
+    font-size:15px;
+      margin-bottom:10px;
+  }
+
+  .details>.overview{
+      font-size:20px;
+      border-left:2px solid #212121;
+      padding:15px;
+      margin-bottom:10px;
+  }
+
+  .details>.production_companies>.company_name{
+        margin-left:15px;
+        font-size:15px;
+        margin-top:10px;
+  }
+
+  @media screen and (max-width:500px) {
+    section.details-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .image{
+        max-width: 250px;
+    }
+    .image>img{
+        width:100%;
+    }
+  }

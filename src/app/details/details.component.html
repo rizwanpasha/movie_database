@@ -1,0 +1,15 @@
+<section class="details-container">
+  <aside class="image">
+    <img src="https://image.tmdb.org/t/p/w300/{{details.poster_path}}" alt="{{details.title}}">
+  </aside>
+
+  <article class="details">
+    <h1 class="title">{{details.title}}.</h1>
+    <h3 class="release_date">({{details.release_date}})</h3>
+    <div class="overview">{{details.overview}}</div>
+    <div class="production_companies">
+      <h3 class="title">Production Companies</h3>
+      <h3 class="company_name" *ngFor="let company of details.production_companies">{{company.name}}</h3>
+    </div>
+  </article>
+</section>

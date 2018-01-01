@@ -1,0 +1,23 @@
+<section class="search-result-container">
+
+  <div *ngIf='isSuccess; then success else error'></div>
+  <ng-template #success>
+    <a class="movie-item" *ngFor="let item of movieList" routerLink="/details/{{item.id}}">
+      <img class="movie-item-img" src="https://image.tmdb.org/t/p/w300/{{item.poster_path}}" alt="{{item.title}}">
+    </a>
+  </ng-template>
+  <ng-template #error>
+    <h1 class="no-results">
+      <p>
+        Sorry,
+      </p>
+      <p>
+        Nothing found :(
+      </p>
+      <a routerLink='/home' class="back_to_home">
+          Back to home.
+      </a>
+    </h1>
+    
+  </ng-template>
+</section>

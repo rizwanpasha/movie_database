@@ -1,0 +1,16 @@
+section.main-container {
+  width: 100vw;
+  height: calc(100vh - 70px);
+  position: absolute;
+  top: 70px;
+  z-index: -100;
+  overflow-x: hidden;
+  padding: 10px;
+}
+
+@media screen and (max-width:500px) {
+  section.main-container {
+    height: calc(100vh - 60px);
+    top:60px;
+  }
+}

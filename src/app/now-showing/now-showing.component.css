@@ -1,0 +1,21 @@
+section.now-showing-container {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin: 0 auto;
+}
+
+.movie-item {
+  max-width: 100%;
+}
+
+.movie-item-img {
+  max-width: 100%;
+}
+
+@media screen and (max-width:500px) {
+  section.now-showing-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

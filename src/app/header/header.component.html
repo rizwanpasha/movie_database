@@ -1,0 +1,7 @@
+<header>
+  <span class="left-arrow" (click)="goBack()"></span>
+  <div class="header-container">
+    <input type="text" placeholder="Search a movie..." size="20" (keydown.enter)='onSearch(inputRef)' #inputRef>
+    <span class="icon" (click)='onSearch(inputRef)'></span>
+  </div>
+</header>
